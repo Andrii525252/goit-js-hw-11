@@ -1,23 +1,23 @@
 body {
   font-family: sans-serif;
-  margin: 0;
   padding: 20px;
+  margin: 0;
 }
 
 .form {
   display: flex;
   justify-content: center;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
-input[type='text'] {
+input {
   padding: 10px;
   font-size: 16px;
 }
 
 button {
   padding: 10px;
-  margin-left: 10px;
   cursor: pointer;
 }
 
@@ -25,6 +25,8 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  list-style: none;
+  padding: 0;
 }
 
 .gallery-item {
@@ -34,8 +36,8 @@ button {
 
 .gallery-item img {
   width: 100%;
-  display: block;
   height: auto;
+  display: block;
 }
 
 .loader-container {
@@ -44,15 +46,12 @@ button {
   align-items: center;
   position: fixed;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   z-index: 9999;
 }
 
-.loader-container.visible {
-  display: flex;
-}
-
-.loader {
+.loader-container.visible::before {
+  content: '';
   width: 48px;
   height: 48px;
   border: 5px solid #999;
