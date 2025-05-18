@@ -58,7 +58,7 @@
 // ‑‑‑ SimpleLightbox прибрали звідси! ‑‑‑
 
 const galleryContainer = document.querySelector('.gallery');
-const loader = document.querySelector('.loader-container');
+const loader = document.querySelector('.loader');
 
 export function createGallery(images) {
   const markup = images

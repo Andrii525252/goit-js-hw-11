@@ -40,7 +40,7 @@ button {
   display: block;
 }
 
-.loader-container {
+.loader {
   display: none;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@ button {
   z-index: 9999;
 }
 
-.loader-container.visible::before {
+.loader.visible::before {
   content: '';
   width: 48px;
   height: 48px;
