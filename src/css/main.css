@@ -50,6 +50,10 @@ button {
   z-index: 9999;
 }
 
+.loader.visible {
+  display: flex;
+}
+
 .loader.visible::before {
   content: '';
   width: 48px;
